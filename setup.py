@@ -18,7 +18,7 @@ setup(
     author="Richard Jones & Ben Dichter",
     author_email="ben.dichter@catalystneuro.com",
     py_modules=['fparse'],
-    url='https://github.com/r1chardj0n3s/parse',
+    url='https://github.com/catalystneuro/fparse',
     classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
