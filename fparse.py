@@ -486,7 +486,7 @@ See the end of the source file for the license of use.
 
 from __future__ import absolute_import
 
-__version__ = '1.20.0'
+__version__ = '1.20.1'
 
 # yes, I now have two problems
 import re

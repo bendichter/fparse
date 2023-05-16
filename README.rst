@@ -282,7 +282,6 @@ that this limit will be removed one day.
 .. _`parse library`:
   https://github.com/r1chardj0n3s/parse
 
-
 Result and Match Objects
 ------------------------
 
@@ -346,7 +345,7 @@ information to a type converter function:
 
 .. code-block:: pycon
 
-    >>> from parse import with_pattern
+    >>> from fparse import with_pattern
     >>> @with_pattern(r'\d+')
     ... def parse_number(text):
     ...    return int(text)
