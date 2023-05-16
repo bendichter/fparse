@@ -194,9 +194,17 @@ tt    Time                                        time
       e.g. 10:21:36 PM -5:30
 ===== =========================================== ========
 
-The type can also be a datetime format string, following the
-`1989 C standard format codes`_, e.g. %Y-%m-%d. Any type containing %Y
-or %y will be parsed and output as a ``datetime.datetime``.
+Datetimes
+---------
+
+The format spec can also be a datetime format string, following the
+`1989 C standard format codes`_ for datetimes. Any type containing %Y or
+%y will be parsed and output as a ``datetime.datetime``. For example,
+
+.. code-block:: pycon
+
+    >>> parse('Meet at {:%Y-%m-%d}', 'Meet at 2023-05-15')
+    <Result (datetime.datetime(2023, 15, 5),) {}>
 
 Some examples of typed parsing with ``None`` returned if the typing
 does not match:
